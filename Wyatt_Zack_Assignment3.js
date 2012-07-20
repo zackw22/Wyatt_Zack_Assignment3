@@ -10,11 +10,12 @@ var team2= "The Lightening";
 var series= "7";
 var event= "ABC Finals";
 var say = function(message) { console.log(message); };
-var guarded = true
-var guarded1= true
+var guarded = true;
+var blocked= false;
 
 
 //Object
+//Argument number
 var game = {
     teams: [team1, team2], //Property: Array
     Lightening:"99",//Property: Num
@@ -35,18 +36,22 @@ game.whosUp(1); //Method
 
 
 //For Loop
+//Argument Array
 
 console.log("Starting for " + team1);
 var listOfPlayers = function (json) {
 	for (var i = 0; i < json.players.length; i++) {
 		var player = json.players[i];
 		say("Name: " + player.name + ", Position: " + player.position + ", Height: " + player.height);
-	};
-};
+	
+        };
+};json.players.push("Michael");// Method: Mutator
 
 listOfPlayers(json);
 
 //For loop
+//Argument Array
+//
 
 console.log("Starting for " + team2);
 var listOfOpponents = function (json2) {
@@ -59,6 +64,7 @@ var listOfOpponents = function (json2) {
 listOfOpponents(json2);
 
 //Boolean
+//Nesting Conditional
 
     if (guarded === false) {
         console.log ("Jebron takes the shot!");
@@ -70,6 +76,31 @@ listOfOpponents(json2);
             console.log ("Michael will take the shot!");
        }
        };
+//While Loop
+i = game.secondsLeft
+while (i>=1)
+  {
+  console.log (i)
+  i--;
+  };
+  
+//Return String
+//Argument String
+
+function shoots() {
+    console.log("He shoots!");
+    
+};  
+shoots()
+
+if (blocked===false){
+    console.log("He score!, The crowd goes wild!")
+    console.log(team1 + " wins the " + event + " !");
+}
+    else{
+        console.log("He misses!, the crowd is booing him off the court");
+        console.log(team2 + " wins the " + event + " !");
+    };
 
 
 
