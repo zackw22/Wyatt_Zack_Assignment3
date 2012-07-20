@@ -11,6 +11,8 @@ var series= "7";
 var event= "ABC Finals";
 var say = function(message) { console.log(message); };
 var guarded = true
+var guarded1= true
+
 
 //Object
 var game = {
@@ -56,6 +58,19 @@ var listOfOpponents = function (json2) {
 };
 listOfOpponents(json2);
 
-//
+//Boolean
+
+    if (guarded === false) {
+        console.log ("Jebron takes the shot!");
+    }
+        
+       else if (guarded === true){
+            console.log ("Jebron passes it to Michael");
+       if (guarded=== true){
+            console.log ("Michael will take the shot!");
+       }
+       };
+
+
 
 
