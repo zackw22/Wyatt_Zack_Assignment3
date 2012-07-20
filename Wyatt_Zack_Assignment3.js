@@ -1,27 +1,36 @@
 //alert("JavaScript works!");
 
+//Property= Is a key inside of an Object
+
+//Method= A function inside of an object
+
 // Global Variables
 var team1= "The Flame";
 var team2= "The Lightening";
 var series= "7";
 var event= "ABC Finals";
 var say = function(message) { console.log(message); };
+var guarded = true
 
 //Object
 var game = {
-    teams: [team1, team2],
-    Lightening:"99",
-    whosUp: function() {
-        console.log(team2 +" is up by 1");
+    teams: [team1, team2], //Property: Array
+    Lightening:"99",//Property: Num
+    whosUp: function(x) {
+        console.log(team2 +" is up by " + x);//Property: Function
     },
-    secondsLeft: "10",
+    secondsLeft: "10", //
+    
+    
     
 };
 
-//Procedure
-console.log("Welcome to game " + series + "!");
+//Method: Procedure
+console.log("Welcome to game " + series + " of the " + event +"!");
 console.log(team1 + " vs " + team2);
-game.whosUp();
+console.log("With " + game.secondsLeft + " seconds left.");
+game.whosUp(1); //Method
+
 
 //For Loop
 
@@ -35,6 +44,8 @@ var listOfPlayers = function (json) {
 
 listOfPlayers(json);
 
+//For loop
+
 console.log("Starting for " + team2);
 var listOfOpponents = function (json2) {
 	for (var i = 0; i < json2.opponents.length; i++) {
@@ -44,3 +55,7 @@ var listOfOpponents = function (json2) {
         };
 };
 listOfOpponents(json2);
+
+//
+
+
